@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="32790" started-at="2019-06-01T09:02:44Z" finished-at="2019-06-01T09:03:17Z">
+    <groups>
+      <group name="Feature#1">
+        <method signature="TeamCity_build.autoComplete()[pri:1, instance:sampleWorkflow.TeamCity_build@1e88b3c]" name="autoComplete" class="sampleWorkflow.TeamCity_build"/>
+      </group> <!-- Feature#1 -->
+    </groups>
+    <test name="Default test" duration-ms="32790" started-at="2019-06-01T09:02:44Z" finished-at="2019-06-01T09:03:17Z">
+      <class name="sampleWorkflow.TeamCity_build">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:sampleWorkflow.TeamCity_build@1e88b3c]" name="setUp" is-config="true" duration-ms="25757" started-at="2019-06-01T09:02:44Z" finished-at="2019-06-01T09:03:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="autoComplete()[pri:1, instance:sampleWorkflow.TeamCity_build@1e88b3c]" name="autoComplete" duration-ms="5633" started-at="2019-06-01T09:03:10Z" finished-at="2019-06-01T09:03:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- autoComplete -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:sampleWorkflow.TeamCity_build@1e88b3c]" name="tearDown" is-config="true" duration-ms="1293" started-at="2019-06-01T09:03:15Z" finished-at="2019-06-01T09:03:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- sampleWorkflow.TeamCity_build -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
