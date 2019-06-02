@@ -37,7 +37,7 @@ public class TeamCity_build {
 	 public void autoComplete() {
 		   
 	launchURL();
-	WebDriverWait wait=new WebDriverWait(driver, 10); //Explicit wait
+	WebDriverWait wait=new WebDriverWait(driver, 20); //Explicit wait
 	WebElement btnAutocomplete = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@class='btn btn-lg' and @href='/autocomplete']")));
 	btnAutocomplete.click();
 	WebElement Address = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("autocomplete")));
