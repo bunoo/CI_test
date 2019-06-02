@@ -2,16 +2,27 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="129" started-at="2019-06-01T12:00:18Z" finished-at="2019-06-01T12:00:18Z">
+  <suite name="Default suite" duration-ms="46269" started-at="2019-06-02T07:16:05Z" finished-at="2019-06-02T07:16:51Z">
     <groups>
+      <group name="Feature#1">
+        <method signature="TeamCity_build.autoComplete()[pri:1, instance:sampleWorkflow.TeamCity_build@262b2c86]" name="autoComplete" class="sampleWorkflow.TeamCity_build"/>
+      </group> <!-- Feature#1 -->
     </groups>
-    <test name="Default test" duration-ms="129" started-at="2019-06-01T12:00:18Z" finished-at="2019-06-01T12:00:18Z">
-      <class name="testCases.UnitTests">
-        <test-method status="PASS" signature="printTest()[pri:0, instance:testCases.UnitTests@14acaea5]" name="printTest" duration-ms="34" started-at="2019-06-01T12:00:18Z" finished-at="2019-06-01T12:00:18Z">
+    <test name="Default test" duration-ms="46269" started-at="2019-06-02T07:16:05Z" finished-at="2019-06-02T07:16:51Z">
+      <class name="sampleWorkflow.TeamCity_build">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:sampleWorkflow.TeamCity_build@262b2c86]" name="setUp" is-config="true" duration-ms="33423" started-at="2019-06-02T07:16:05Z" finished-at="2019-06-02T07:16:38Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- printTest -->
-      </class> <!-- testCases.UnitTests -->
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="autoComplete()[pri:1, instance:sampleWorkflow.TeamCity_build@262b2c86]" name="autoComplete" duration-ms="10842" started-at="2019-06-02T07:16:38Z" finished-at="2019-06-02T07:16:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- autoComplete -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:sampleWorkflow.TeamCity_build@262b2c86]" name="tearDown" is-config="true" duration-ms="1614" started-at="2019-06-02T07:16:49Z" finished-at="2019-06-02T07:16:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- sampleWorkflow.TeamCity_build -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
