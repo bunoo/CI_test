@@ -1,7 +1,6 @@
 package sampleWorkflow;
 
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -9,16 +8,17 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
 
 public class TeamCity_build {
 
 	WebDriver driver;
 	JavascriptExecutor jse;
 		 
-	@BeforeMethod
+	@BeforeTest
 		public void setUp() {
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\Abha Kumari\\Documents\\INTERVIEW\\SELENIUM\\chromedriver\\chromedriver.exe");
 		driver = new ChromeDriver();
@@ -33,7 +33,8 @@ public class TeamCity_build {
 		
 	 }
 	 
-	 @Test (priority = 1, groups = "Feature#1")
+	 @Test 
+	 //(priority = 1, groups = "Feature#1")
 	 public void autoComplete() {
 		   
 	launchURL();
@@ -45,7 +46,7 @@ public class TeamCity_build {
 	Address.sendKeys("1555 Park Blvd, Palo Alto, CA");
 	}
 	 
-	 @AfterMethod
+	 @AfterTest
 	 public void tearDown() {
 	 	driver.quit();
 	 }
